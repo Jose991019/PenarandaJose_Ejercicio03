@@ -25,7 +25,7 @@ for i in range(4):
     promedio = np.mean(graficar)
     std = np.std(graficar)
     plt.subplot(2,2,i+1)
-    plt.title('Beta {}, promedio = {:.2f}, std = {:.2f}'.format(i,promedio,std))
+    plt.title('Beta {}, promedio = {:.2f}, std = {:.2f}'.format(i+1,promedio,std))
     plt.hist(graficar, bins = 60)
     plt.grid(True)
 plt.savefig("bootstrap.png")
